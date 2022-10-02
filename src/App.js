@@ -10,10 +10,7 @@ function App() {
       <hr/>
       <h2>Q2. What is Context api ?</h2>
       <p>The Context API is a React structure that enables you to exchange unique details and assists in solving prop-drilling from all levels of your application. (or) Context provides a way to pass data through the component tree without having to pass props down manually at every level.
-
-For example, authenticated users, locale preferences, UI themes need to be accessed in the application by many components.
-
-</p>
+      For example, authenticated users, locale preferences, UI themes need to be accessed in the application by many components.</p>
 <hr/>
 <h2>Q3. Difference between callback and useCallback Hook ?</h2>
 <h3>A) callback</h3>
@@ -45,7 +42,15 @@ It can be used together with the useState Hook to share state between deeply nes
 
 “useContext” hook is used to create common data that can be accessed throughout the component hierarchy without passing the props down manually to each level. Context defined will be available to all the child components without involving “props”.
 </p>
-    </div>
+<hr/>
+<h2>Q6. What are React Life cycles Explain each one with Example ?</h2>
+<p>Every react components has a lifecycles of its own.Lifecycle methods we used to monitored our components in different stages of the components existence.</p>
+<p>Lifecycles has four phases that are mentioned below as :-</p>
+<p><strong>1. Initialization :</strong> In Initialization stage,the components is contructed wth the given props and default stage.This is done in the constructor of a components class.</p>
+<p><strong>2. Mounting :</strong> Mounting is the stage of rendering the JSX returned by the render method itself.In this stage,componentDidMount() methods gets called.</p>
+<p><strong>3. Updating :</strong> Updating is the stage where the state of the components is updated.In this stage,componentDidUpdate() method gets called.</p>
+<p><strong>4. Unmounting :</strong> This is the final stage of the component lifecycle whre the component is removed from or destoryed from the browser page.In this stage componentWillUnmount() method gets called.</p>
+  </div>
   );
 }
 
